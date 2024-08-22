@@ -10,7 +10,6 @@ def clear_terminal():
 def wait_user_input():
     wait_in = input("Premi un tasto per continuare....")
     clear_terminal()
-    return None
 
 
 class AddressBook:
@@ -18,16 +17,13 @@ class AddressBook:
         self.contacts = []
         if contact is not None:
             self.contacts.append(contact)
-        return None
 
     def add_contact(self, contact):
         self.contacts.append(contact)
-        return None
 
 
     def remove_contact(self, id):
         self.contacts.pop(id)
-        return None
 
 
     def print_contact(self):
@@ -36,7 +32,6 @@ class AddressBook:
             print(element)
             print("\n")
         wait_user_input()
-        return None
 
 
     def research_by_name(self, name):
