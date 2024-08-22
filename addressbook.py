@@ -3,8 +3,11 @@ import os
 import time
 
 def clear_terminal():
-    time.sleep(1)
-    os.system('clear')
+    if os.name == 'nt':  # per Windows
+        os.system('cls')
+    else:  # per Unix/Linux/macOS
+        os.system('clear')
+
 
 
 def wait_user_input():

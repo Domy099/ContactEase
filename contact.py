@@ -24,11 +24,9 @@ class Contacts:
 
     def set_name(self, name):
         self.name = name
-        return None
 
     def set_surname(self, surname):
         self.surname = surname
-        return None
 
     def set_number(self, number):
         try:
@@ -36,7 +34,6 @@ class Contacts:
             return int_numb
         except ValueError:
             raise ValueError('Numero inserito non valido')
-        return None
 
     def set_email(self, email):
 
